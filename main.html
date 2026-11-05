@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Football Tournament Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Form Container Wrapper -->
+  <div class="form-card">
+    
+    <h2>⚽ Tournament Registration</h2>
+    <p class="subtitle">Fill out the form below to register your team.</p>
+
+    <!-- HTML Form Tag -->
+    <form action="#" method="POST">
+
+      <!-- Team Details Section -->
+      <fieldset>
+        <legend>Team Details</legend>
+
+        <label for="teamName">Team Name:</label>
+        <input type="text" id="teamName" name="teamName" placeholder="Enter team name" required>
+
+        <label for="category">Tournament Category:</label>
+        <select id="category" name="category" required>
+          <option value="">-- Select Category --</option>
+          <option value="open">Open Division</option>
+          <option value="u18">Under-18</option>
+          <option value="u15">Under-15</option>
+        </select>
+      </fieldset>
+
+      <!-- Captain Details Section -->
+      <fieldset>
+        <legend>Captain Details</legend>
+
+        <label for="captainName">Captain's Full Name:</label>
+        <input type="text" id="captainName" name="captainName" placeholder="Enter captain name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="captain@example.com" required>
+
+        <label for="phone">Phone / WhatsApp Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required>
+      </fieldset>
+
+      <!-- Player & Equipment Section -->
+      <fieldset>
+        <legend>Squad & Preferences</legend>
+
+        <label for="playerCount">Total Players (5 - 15):</label>
+        <input type="number" id="playerCount" name="playerCount" min="5" max="15" value="7" required>
+
+        <label for="jerseyColor">Team Jersey Color:</label>
+        <input type="color" id="jerseyColor" name="jerseyColor" value="#0055ff">
+
+        <label>Preferred Play Slots:</label>
+        <div class="checkbox-group">
+          <input type="checkbox" id="morning" name="slot" value="morning">
+          <label for="morning">Morning</label>
+          
+          <input type="checkbox" id="evening" name="slot" value="evening">
+          <label for="evening">Evening</label>
+        </div>
+      </fieldset>
+
+      <!-- Additional Notes Section -->
+      <fieldset>
+        <legend>Additional Information</legend>
+
+        <label for="notes">Special Requests / Notes:</label>
+        <textarea id="notes" name="notes" rows="3" placeholder="Mention any extra details..."></textarea>
+      </fieldset>
+
+      <!-- Terms & Submission -->
+      <div class="terms-group">
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to all tournament rules and liability waivers.</label>
+      </div>
+
+      <button type="submit">Submit Registration</button>
+
+    </form>
+  </div>
+
+</body>
+</html>

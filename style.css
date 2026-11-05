@@ -1,0 +1,135 @@
+/* 1. Global Reset & Body Setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  /* High-quality stadium background image with dark overlay */
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), 
+              url('https://img.magnific.com/free-photo/football-ball-rugby-field_23-2151909689.jpg?semt=ais_hybrid&w=740&q=80') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+}
+
+/* 2. Main Form Card Container */
+.form-card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 500px;
+}
+
+.form-card h2 {
+  text-align: center;
+  color: #1b4332;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666666;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* 3. Fieldsets & Legends */
+fieldset {
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 18px;
+}
+
+legend {
+  font-weight: bold;
+  color: #2d6a4f;
+  padding: 0 8px;
+  font-size: 14px;
+}
+
+/* 4. Labels and Inputs */
+label {
+  display: block;
+  font-weight: bold;
+  font-size: 13px;
+  color: #333333;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #40916c;
+  box-shadow: 0 0 5px rgba(64, 145, 108, 0.4);
+}
+
+/* Color picker styling */
+input[type="color"] {
+  width: 50px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+/* 5. Checkboxes */
+.checkbox-group,
+.terms-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.checkbox-group label,
+.terms-group label {
+  margin: 0;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.terms-group {
+  margin: 15px 0 20px 0;
+}
+
+/* 6. Submit Button */
+button[type="submit"] {
+  width: 100%;
+  background-color: #2d6a4f;
+  color: #ffffff;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #1b4332;
+}
